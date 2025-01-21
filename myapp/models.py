@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from datetime import datetime, timezone
-from app import db
+from myapp import db
 from sqlalchemy import Enum
 
 
