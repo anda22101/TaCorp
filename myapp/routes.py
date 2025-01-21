@@ -1,7 +1,8 @@
-from flask import Blueprint
+from myapp import create_app
 
-routes = Blueprint('routes', __name__)
+app = create_app()
 
-@routes.route("/")
+
+@app.route("/")
 def index():
-    return "Welcome to the Flask App!"
+ return "Welcome to the Flask App!"

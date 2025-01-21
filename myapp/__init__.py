@@ -27,9 +27,7 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    # Register routes
-    from myapp.routes import routes
-    app.register_blueprint(routes)
+       
 
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     return app

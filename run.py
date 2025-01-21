@@ -1,5 +1,8 @@
-from myapp.__init__ import create_app
-app = create_app()
+from myapp.routes import app
+
+
+
+
 
 
 if __name__ == "__main__":
